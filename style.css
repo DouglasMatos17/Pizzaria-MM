@@ -16,8 +16,6 @@
 }
 
 html{
-    height: 100vh;
-    width: 100vw;
     font-size: 62.5%;
     overflow-x: none;
 }
@@ -80,7 +78,7 @@ header ul li a:hover i{
 
 .section-1{
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -136,4 +134,191 @@ header ul li a:hover i{
     border:  1px solid var(--cor-2);
     background-color: transparent;
     color: var(--cor-2);
+}
+
+/* Segunda Sessão */
+
+.sobre{
+    background-color: var(--cor-1);
+    width: 100%;
+    padding-bottom: 5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre img{
+    width: 400px;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    border: 2px solid rgb(245, 244, 244);
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-sobre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-sobre h1{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+}
+
+.content-sobre p{
+    text-align: center;
+    font-size: 1.8rem;
+    max-width: 600px;
+}
+
+/* Cardápio */
+
+.cardapio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(12,12,12,0.9);
+}
+
+.cardapio h2{
+    font-size: 5rem;
+    color: #e6e6e6;
+    text-transform: uppercase;
+    margin: 3rem;
+}
+
+.itens-cardapio{
+    width: 80%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 550px));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.itens-cardapio .info{
+    background-color: rgb(221, 221, 221);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    color: #1f1e1f;
+}
+
+.itens-cardapio h3{
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    text-decoration: underline;
+    color: #1f1e1f;
+}
+
+.itens-cardapio h4{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: #1f1e1f;
+    grid-template-columns: 150px 150px;
+    margin-left: 6rem;
+}
+
+.itens-cardapio span{
+    color: #585858;
+    font-size: 1.6rem;
+    margin-left: 1.5rem;
+    text-decoration: underline;
+}
+
+.itens-cardapio div{
+    background-color: #5e5252;
+    box-shadow: 0px 0px 4px 1px;
+    border-radius: 5px;
+}
+
+.itens-cardapio img{
+    width: 100%;
+}
+
+.btn-pedir{
+    width: 200px;
+    height: 35px;
+    margin-top: 0.5rem;
+    background-color: var(--cor-2);
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #1f1e1f;
+    transition: all .2s;
+}
+
+.btn-pedir:hover{
+    background-color: hwb(300 12% 88% / 0.747);
+    color: #e6e6e6;
+}
+
+/* Contatos */
+
+.contatos{
+    width: 100%;
+    background-color: #1f1e1f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.8rem;
+    padding-bottom: 4rem;
+}
+
+.contatos h3{
+    font-size: 6rem;
+    margin-bottom: 3rem;
+}
+
+.contatos-sessao{
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.contatos-sessao i{
+    margin-right: 1rem;
+
+}
+
+.contatos-sessao div{
+    cursor: pointer;
+    transition: all .2s ease-in;
+}
+
+.contatos-sessao div:hover i{
+    color: #ffc506;
+}
+.contatos-sessao div:hover span{
+    color: #ffc506;
+}
+
+/* Footer */
+
+footer{
+    height: 35px;
+    background-color: black;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
