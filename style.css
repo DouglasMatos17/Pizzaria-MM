@@ -13,6 +13,7 @@
     border: none;
     font-family: 'Roboto', sans-serif;
     color: white;
+    scroll-behavior: smooth;
 }
 
 html{
@@ -196,11 +197,11 @@ header ul li a:hover i{
 }
 
 .itens-cardapio{
-    width: 80%;
+    width: 90%;
     margin-top: 2rem;
     margin-bottom: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 550px));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 400px));
     justify-content: center;
     align-items: center;
     gap: 30px;
@@ -321,4 +322,179 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1200px){
+    .main {
+        display: block;
+    }
+    header{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 12%;
+        padding-left: 0px;
+    }
+    .sobre img{
+        width: 600px;
+        margin-left: -2px;
+    }
+}
+
+@media (max-width: 990px) {
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 770px){
+    html{
+        font-size: 45%;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+    header ul{
+        display: none;
+    }
+    .one, .two, .three {
+        width: 80%;
+        height: 2px;
+        background-color: white;
+        margin: 4px;
+        transition-duration: 0.5s;
+    }
+    .menu-toggle{
+        display: flex;
+        flex-direction: column;
+        width: 30px;
+        height: 30px;
+    }
+    .header-content.on{
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 60vw;
+        height: 100vh;
+        background-color: rgba(30, 31, 30, .8);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .header-content.on .logo{
+        display: none;
+    }
+    .header-content.on .menu-toggle{
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+    .header-content.on ul{
+        display: block;
+    }
+    .header-content.on ul li{
+        display: flex;
+        justify-content: center;
+    }
+    .header-content.on ul li a{
+        font-size: 2rem;
+    }
+    .header-content.on .menu-toggle .two{
+        opacity: 0;
+    }
+    .header-content.on .menu-toggle .one{
+        transform: rotate(45deg) translate(5px, -8px);
+    }
+    .header-content.on .menu-toggle .three{
+        transform: rotate(-45deg) translate(22px, -8px);
+    }
+
+
+
+    .itens-cardapio{
+        grid-template-columns: repeat(2, minmax(50px, 350px));
+    }
+
+    .itens-cardapio .info h4{
+        margin-left: 12rem;
+    }
+
+    .contatos-sessao{
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .contatos-sessao div{
+        margin: 1rem;
+    }
+}
+
+@media (max-width:600px) {
+    .section-1 .content h1{
+        width: 500px;
+        text-align: center;
+        font-size: 4rem;
+    }
+    .section-1 .content h2{
+        font-size: 2rem;
+    }
+
+    .itens-cardapio{
+        grid-template-columns: repeat(auto-fit, minmax(50px, 350px));
+    }
+
+    .sobre img{
+        width: 400px;
+    }
+    .sobre p{
+        text-align: center;
+        width: 400px;
+    }
+    .contatos-sessao{
+        width: 300px;
+    }
+}
+@media (max-width:500px) {
+    .btn{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    }
+    .btn button {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    .section-1 .content h1{
+        width: 300px;
+        font-size: 3rem;
+        text-align: center;
+    }
+    .section-1 .content h2{
+        width: 190px;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+}
+@media (max-width:420px){
+    .content-sobre p{
+        width: 300px;
+    }
+    .sobre img{
+        width: 300px;
+    }
+}
+@media (max-width:400px){
+    .itens-cardapio .info span{
+        width: 70px;
+    }
+    .itens-cardapio .info h4{
+        width: 150px;
+        
+    }
 }

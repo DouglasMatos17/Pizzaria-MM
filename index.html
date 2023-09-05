@@ -8,24 +8,29 @@
     <title>Mamma Mia</title>
 </head>
 <body>
-    <header><!-- pagina seguindo video https://www.youtube.com/watch?v=Uxm17PTHAZw&ab_channel=CrisTech -->
-        <div>
+    <header class="header-content"><!-- pagina seguindo video https://www.youtube.com/watch?v=Uxm17PTHAZw&ab_channel=CrisTech -->
+        <div class="logo">
             <img src="image/Logo-Pizza.png" alt="Logo Pizza">
             <h1>Mamma Mia</h1>
         </div>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Cardápio</a></li>
-                <li><a href="#">Contatos</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#contatos">Contatos</a></li>
                 <li><a href="#"><i class="bi bi-instagram"></i></a></li>
                 <li><a href="#"><i class="bi bi-facebook"></i></a></li>
                 <li><a href="#"><i class="bi bi-cart2"></i></a></li>
             </ul>
         </nav>
+        <div class="menu-toggle">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
     </header>
-    <section class="section-1">
+    <section class="section-1" id="home">
         <div class="content">
             <h1>Deixe o seu dia mais saboroso!</h1>
             <h2>As pizzas mais recomendadas da região</h2>
@@ -35,7 +40,7 @@
             </div>
         </div>
     </section><!-- Fim do video -->
-    <section class="sobre"><!-- Parte 2 https://www.youtube.com/watch?v=wkDAd26xf5w&t=11s&ab_channel=CrisTech -->
+    <section class="sobre" id="sobre"><!-- Parte 2 https://www.youtube.com/watch?v=wkDAd26xf5w&t=11s&ab_channel=CrisTech -->
         <div class="main">
             <div class="content-sobre">
                 <h1>Sobre nós</h1>
@@ -46,8 +51,7 @@
             </div>
         </div>
     </section>
-
-    <section class="cardapio">
+    <section class="cardapio" id="cardapio">
         <h2>Cardápio</h2>
         <div class="itens-cardapio">
             <div>
@@ -132,7 +136,6 @@
             </div>
         </div>
     </section>
-
     <section class="contatos" id="contatos">
         <h3>Contatos</h3>
         <div class="contatos-sessao">
@@ -153,6 +156,7 @@
     <footer>
         <h4>Desenvolvido por Douglas Matos</h4>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
 
